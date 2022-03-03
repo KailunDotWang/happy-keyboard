@@ -18,11 +18,8 @@ send,{Enter}
 }
 return
 
-; 3. \ to Backspace or \
+; 3. \ to Backspace 
 \::Backspace
 
 ; 4. Backspace to \
 Backspace::\
-
-; 5. ` to Esc
-; `::Esc

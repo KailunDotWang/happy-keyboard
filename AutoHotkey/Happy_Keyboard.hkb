@@ -1,0 +1,28 @@
+; AutoHotkey_1.1.33.10
+
+; Create on 2022/03/02 by kailun.wang.
+; Happy Keyboard
+
+; 1. CapsLock to LCtrl
+CapsLock::LCtrl
+
+; 2. Enter or Right Ctrl
+Enter::
+KeyWait,Enter,T0.199
+if (ErrorLevel){
+SendInput,{RCtrl down}
+KeyWait,Enter
+SendInput,{RCtrl up}
+}else{
+send,{Enter}
+}
+return
+
+; 3. \ to Backspace or \
+\::Backspace
+
+; 4. Backspace to \
+Backspace::\
+
+; 5. ` to Esc
+; `::Esc

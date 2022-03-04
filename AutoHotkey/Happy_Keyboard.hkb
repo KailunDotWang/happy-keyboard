@@ -1,7 +1,9 @@
-; AutoHotkey_1.1.33.10
-
 ; Create on 2022/03/02 by kailun.wang.
-; Happy Keyboard
+; Happy Keyboard power by AutoHotkey_1.1.33.10.
+
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Remapping Keys
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ; 1. CapsLock to LCtrl
 CapsLock::LCtrl
@@ -23,3 +25,24 @@ return
 
 ; 4. Backspace to \
 Backspace::\
+
+
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Moving the Cursor
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; 1. Previous and Next of cursor
+CapsLock & p::Up
+CapsLock & n::Down
+
+; 2. Backward and Forward of letter
+Enter & b::Left
+Enter & f::Right
+
+; 3. Backward and Forward of word
+Alt & b::^Left
+Alt & f::^Right
+
+; 4. Delete a letter backward
+CapsLock & h::Backspace
+

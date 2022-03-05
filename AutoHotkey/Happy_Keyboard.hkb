@@ -1,16 +1,24 @@
 ; Create on 2022/03/02 by kailun.wang.
-; Happy Keyboard power by AutoHotkey_1.1.33.10.
+; AutoHotkey_1.1.33.10
+; Happy Keyboard
 
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Remapping Keys
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; 1. CapsLock to LCtrl
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Happy Hacking Keyboard
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; CapsLock to LCtrl
 CapsLock::LCtrl
+CapsLock & i::^i
+CapsLock & o::LCtrl
+CapsLock & j::LCtrl
+CapsLock & l::LCtrl
+CapsLock & m::LCtrl
+CapsLock & Backspace::^`
 
-; 2. Enter or Right Ctrl
+; Enter or Right Ctrl
 Enter::
-KeyWait,Enter,T0.199
+KeyWait,Enter,T0.156
 if (ErrorLevel){
 SendInput,{RCtrl down}
 KeyWait,Enter
@@ -20,29 +28,53 @@ send,{Enter}
 }
 return
 
-; 3. \ to Backspace 
+;  \ to Backspace
 \::Backspace
+CapsLock & \::\
 
-; 4. Backspace to \
-Backspace::\
+; Backspace to `
+Backspace::`
+
+; ` to Esc
+`::Esc
 
 
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Moving the Cursor
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Emacs
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; 1. Previous and Next of cursor
+; Previous and Next of cursor
 CapsLock & p::Up
 CapsLock & n::Down
 
-; 2. Backward and Forward of letter
+; Backward and Forward of letter
 Enter & b::Left
 Enter & f::Right
 
-; 3. Backward and Forward of word
-Alt & b::^Left
-Alt & f::^Right
+; Backward and Forward of word
+<!b::^Left
+<!f::^Right
 
-; 4. Delete a letter backward
-CapsLock & h::Backspace
+; Delete a letter backward
+CapsLock & h::^h
+;  Delete a letter forward
+CapsLock & d::^d
+
+; Delete a word backward
+Enter & w::^w
+; Delete a word forward
+; !d::!d
+
+; Delete all backward
+CapsLock & u::^u
+; Delete all forward
+CapsLock & k::^k
+
+; Paste
+CapsLock & y::+Insert
+
+
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Vim
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 

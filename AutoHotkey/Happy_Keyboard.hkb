@@ -10,22 +10,22 @@ CapsLock::LCtrl
 
 CapsLock & y::+Insert		; Emacs
 CapsLock & u::^u
-CapsLock & i::^i		; VS Code	
+CapsLock & i::^i		    ; VS Code	
 CapsLock & o::LCtrl
-CapsLock & p::Up		; Emacs
+CapsLock & p::Up		    ; Emacs
 
 CapsLock & h::Backspace		; Emacs
 CapsLock & j::LCtrl
-CapsLock & k::^k		; Emacs
+CapsLock & k::^k		    ; Emacs
 CapsLock & l::LCtrl
 
-CapsLock & n::Down		; Emacs
+CapsLock & n::Down		    ; Emacs
 CapsLock & m::LCtrl
 
-CapsLock & 0::^0		; VS Code
+CapsLock & 0::^0		    ; VS Code
 
 CapsLock & Backspace::^`	; VS Code
-CapsLock & \::\			; Kailun.Wang
+CapsLock & \::\			    ; Kailun.Wang
 
 
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -33,28 +33,28 @@ CapsLock & \::\			; Kailun.Wang
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 Enter & q::RCtrl
-Enter & w::^w			; Emacs
+Enter & w::^w			    ; Emacs
 Enter & e::RCtrl
 Enter & r::RCtrl
 Enter & t::RCtrl
 
-Enter & a::^a			; Kailun.Wang
-Enter & s::^s			; Kailun.Wang
+Enter & a::^a			    ; Kailun.Wang
+Enter & s::^s			    ; Kailun.Wang
 Enter & d::RCtrl
-Enter & f::Right		; Emacs
+Enter & f::Right		    ; Emacs
 Enter & g::RCtrl
 
 Enter & z::RCtrl
 Enter & x::RCtrl
 Enter & c::RCtrl
 Enter & v::RCtrl
-Enter & b::Left			; Emacs
+Enter & b::Left			    ; Emacs
 
-Enter & 1::^1			; VS Code
-Enter & 2::^2			; VS Code
-Enter & 3::^3			; VS Code
+Enter & 1::^1			    ; VS Code
+Enter & 2::^2			    ; VS Code
+Enter & 3::^3			    ; VS Code
 
-Enter::				; Kailun.Wang
+Enter::				        ; Kailun.Wang
 KeyWait,Enter,T0.156
 if (ErrorLevel){
 SendInput,{RCtrl down}
@@ -70,36 +70,36 @@ return
 ; ;;;;;;;;;;;;;;;;;;; Slash ;;;;;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-\::Backspace			; HHKB
+\::Backspace			    ; HHKB
 
 
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;; Backspace ;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-Backspace::`			; HHKB
+Backspace::`			    ; HHKB
 
 
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;; Esc ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-Esc::`				; Disable
+Esc::`				        ; Disable
 
 
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;; Backquote ;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-`::Esc				; HHKB
+`::Esc				        ; HHKB
 
 
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;; Alt ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
->!b::^Left			; Emacs
->!f::^Right			; Emacs
+>!b::^Left			        ; Emacs
+>!f::^Right			        ; Emacs
 
 
 ; ;;;;;;;;;;;;;;;;;

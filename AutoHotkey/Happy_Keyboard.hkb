@@ -1,23 +1,60 @@
 ; Create on 2022/03/02 by kailun.wang.
-; AutoHotkey_1.1.33.10
-; Happy Keyboard
+; Happy Keyboard is your happy friend.
+; Create by AutHotkey v1.1.33.10.
 
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;; Caps Lock ;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Happy Hacking Keyboard
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-; CapsLock to LCtrl
 CapsLock::LCtrl
-CapsLock & i::^i
-CapsLock & o::LCtrl
-CapsLock & j::LCtrl
-CapsLock & l::LCtrl
-CapsLock & m::LCtrl
-CapsLock & Backspace::^`
 
-; Enter or Right Ctrl
-Enter::
+CapsLock & y::+Insert		; Emacs
+CapsLock & u::^u
+CapsLock & i::^i		; VS Code	
+CapsLock & o::LCtrl
+CapsLock & p::Up		; Emacs
+
+CapsLock & h::Backspace		; Emacs
+CapsLock & j::LCtrl
+CapsLock & k::^k		; Emacs
+CapsLock & l::LCtrl
+
+CapsLock & n::Down		; Emacs
+CapsLock & m::LCtrl
+
+CapsLock & 0::^0		; VS Code
+
+CapsLock & Backspace::^`	; VS Code
+CapsLock & \::\			; Kailun.Wang
+
+
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;; Enter ;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Enter & q::RCtrl
+Enter & w::^w			; Emacs
+Enter & e::RCtrl
+Enter & r::RCtrl
+Enter & t::RCtrl
+
+Enter & a::^a			; Kailun.Wang
+Enter & s::^s			; Kailun.Wang
+Enter & d::RCtrl
+Enter & f::Right		; Emacs
+Enter & g::RCtrl
+
+Enter & z::RCtrl
+Enter & x::RCtrl
+Enter & c::RCtrl
+Enter & v::RCtrl
+Enter & b::Left			; Emacs
+
+Enter & 1::^1			; VS Code
+Enter & 2::^2			; VS Code
+Enter & 3::^3			; VS Code
+
+Enter::				; Kailun.Wang
 KeyWait,Enter,T0.156
 if (ErrorLevel){
 SendInput,{RCtrl down}
@@ -28,53 +65,76 @@ send,{Enter}
 }
 return
 
-;  \ to Backspace
-\::Backspace
-CapsLock & \::\
 
-; Backspace to `
-Backspace::`
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;; Slash ;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; ` to Esc
-`::Esc
+\::Backspace			; HHKB
 
 
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Emacs
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;; Backspace ;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-; Previous and Next of cursor
-CapsLock & p::Up
-CapsLock & n::Down
-
-; Backward and Forward of letter
-Enter & b::Left
-Enter & f::Right
-
-; Backward and Forward of word
-<!b::^Left
-<!f::^Right
-
-; Delete a letter backward
-CapsLock & h::^h
-;  Delete a letter forward
-CapsLock & d::^d
-
-; Delete a word backward
-Enter & w::^w
-; Delete a word forward
-; !d::!d
-
-; Delete all backward
-CapsLock & u::^u
-; Delete all forward
-CapsLock & k::^k
-
-; Paste
-CapsLock & y::+Insert
+Backspace::`			; HHKB
 
 
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Vim
-; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;; Esc ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+Esc::`				; Disable
+
+
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;; Backquote ;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+`::Esc				; HHKB
+
+
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;; Alt ;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+>!b::^Left			; Emacs
+>!f::^Right			; Emacs
+
+
+; ;;;;;;;;;;;;;;;;;
+; ;;;; DISABLE ;;;; 
+; ;;;;;;;;;;;;;;;;;
+
+CapsLock & q::LCtrl
+CapsLock & w::LCtrl
+CapsLock & e::LCtrl
+CapsLock & r::LCtrl
+CapsLock & t::LCtrl
+
+CapsLock & a::LCtrl
+CapsLock & s::LCtrl
+CapsLock & d::LCtrl
+CapsLock & f::LCtrl
+CapsLock & g::LCtrl
+
+CapsLock & z::LCtrl
+CapsLock & x::LCtrl
+CapsLock & c::LCtrl
+CapsLock & v::LCtrl
+CapsLock & b::LCtrl
+
+
+Enter & y::RCtrl
+Enter & u::RCtrl
+Enter & i::RCtrl
+Enter & o::RCtrl
+Enter & p::RCtrl
+
+Enter & h::RCtrl
+Enter & j::RCtrl
+Enter & k::RCtrl
+Enter & l::RCtrl
+
+Enter & n::RCtrl
+Enter & m::RCtrl

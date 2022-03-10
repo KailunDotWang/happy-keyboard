@@ -1,6 +1,6 @@
 # Happy Keyboard
 
-Happy Keyboard is your happy friend.
+How to get happiness of Happy Keyboard,
 
 Power by AutoHotkey v1.1.33.10.
 

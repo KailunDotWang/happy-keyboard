@@ -1,6 +1,6 @@
 # Happy Keyboard
 
-How to get happiness of Happy Keyboard,
+Customize your happy keyboard.
 
 Power by AutoHotkey v1.1.33.10.
 

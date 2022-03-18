@@ -33,28 +33,28 @@ Create on 2022/03/03 20:09:57 by [Kailun.Wang](https://kailun.wang).
 
 ## Enter
 
-|    Key    |    Map    |    Command    |            Script             |     When     |   Source    | Shortcuts |
-| :-------: | :-------: | :-----------: | :---------------------------: | :----------: | :---------: | :-------: |
-|   Enter   |   Enter   |               |  Enter::KeyWait,Enter,T0.156  | Single Click |             |           |
-|   Enter   |   RCtrl   |               | Enter::SendInput {RCtrl down} |     Held     | Kailun.Wang |           |
-| Enter + q |   RCtrl   |               |                               |              |             |           |
-| Enter + w | RCtrl + w | Delete a word |                               |              |    Emacs    |           |
-| Enter + e |   RCtrl   |               |                               |              |             |           |
-| Enter + r |   RCtrl   |               |                               |              |             |           |
-| Enter + t |   RCtrl   |               |                               |              |             |           |
-| Enter + a |   RCtrl   |               |                               |              |             |           |
-| Enter + s | RCtrl + s |     Save      |                               |              |             |           |
-| Enter + d |   RCtrl   |               |                               |              |             |           |
-| Enter + f | RCtrl + f |  Right arrow  |        Enter & f::Left        |              |    Emacs    |           |
-| Enter + g |  RCtrl +  |               |                               |              |             |           |
-| Enter + z |  RCtrl +  |               |                               |              |             |           |
-| Enter + x |  RCtrl +  |               |                               |              |             |           |
-| Enter + c |  RCtrl +  |               |                               |              |             |           |
-| Enter + v |  RCtrl +  |               |                               |              |             |           |
-| Enter + b | RCtrl + b |  Left arrow   |        Enter & b::Left        |              |    Emacs    |           |
-| Enter + 1 | RCtrl + 1 |               |                               |              |   VS Code   |           |
-| Enter + 2 | RCtrl + 2 |               |                               |              |   VS Code   |           |
-| Enter + 3 | RCtrl + 3 |               |                               |              |   VS Code   |           |
+|    Key    |    Map    |      Command      |            Script             |     When     | Source  | Shortcuts |
+| :-------: | :-------: | :---------------: | :---------------------------: | :----------: | :-----: | :-------: |
+|   Enter   |   Enter   |                   |  Enter::KeyWait,Enter,T0.156  | Single Click |         |           |
+|   Enter   |   RCtrl   |                   | Enter::SendInput {RCtrl down} |     Held     |         |           |
+| Enter + q |   RCtrl   |                   |                               |              |         |           |
+| Enter + w | RCtrl + w |   Delete a word   |                               |              |  Emacs  |           |
+| Enter + e | RCtrl + e |                   |                               |              |         |           |
+| Enter + r | RCtrl + r |                   |                               |              |         |           |
+| Enter + t | RCtrl + t |                   |                               |              |         |           |
+| Enter + a | RCtrl + a |                   |                               |              |         |           |
+| Enter + s | RCtrl + s |       Save        |                               |              |         |           |
+| Enter + d | RCtrl + d |                   |                               |              |         |           |
+| Enter + f |   Right   |    Right arrow    |        Enter & f::Left        |              |  Emacs  |           |
+| Enter + g | RCtrl + g |                   |                               |              |         |           |
+| Enter + z | RCtrl + z |                   |                               |              |         |           |
+| Enter + x |           |                   |                               |              |         |           |
+| Enter + c | RCtrl + c |                   |                               |              |         |           |
+| Enter + v | RCtrl + v | block visual mode |                               |              |   vim   |           |
+| Enter + b | RCtrl + b |    Left arrow     |        Enter & b::Left        |              |  Emacs  |           |
+| Enter + 1 | RCtrl + 1 |                   |                               |              | VS Code |           |
+| Enter + 2 | RCtrl + 2 |                   |                               |              | VS Code |           |
+| Enter + 3 | RCtrl + 3 |                   |                               |              | VS Code |           |
 
 
 ## Backspace

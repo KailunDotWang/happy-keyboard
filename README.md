@@ -1,86 +1,50 @@
-# Happy Keyboard
+# WANG Keyboard
 
-Customize your happy keyboard.
-
-Power by AutoHotkey v1.1.33.10.
-
-Create on 2022/03/03 20:09:57 by [Kailun.Wang](https://kailun.wang).
+Customize your keyboard.
 
 
-## Caps Lock
-
-|         Key          |      Map       |     Command     |        Script         | When  | Source  | Shortcuts |
-| :------------------: | :------------: | :-------------: | :-------------------: | :---: | :-----: | :-------: |
-|       CapsLock       |     LCtrl      |                 |    CapsLock::LCtrl    | Held  |  HHKB   |           |
-|     CapsLock + y     | Shift + Insert |      Paste      | CapsLock & y::+Insert |       |  Emacs  |           |
-|     CapsLock + u     |   LCtrl + u    |                 |                       |       |         |           |
-|     CapsLock + i     |   LCtrl + i    | Trigger Suggest |   CapsLock & i::^i    |       | VS Code |           |
-|     CapsLock + o     |   LCtrl + o    |                 |                       |       |         |           |
-|     CapsLock + p     |       Up       |  Previous line  |   CapsLock & p::^p    |       |  Emacs  | LCtrl + p |
-|     CapsLock + h     |   Backspace    |    Backspace    |    CapsLock & h::^    |       |  Emacs  | LCtrl + h |
-|     CapsLock + j     |                |                 |                       |       |         |           |
-|     CapsLock + k     |                |                 |                       |       |         |           |
-|     CapsLock + l     |                |                 |                       |       |         |           |
-|     CapsLock + k     |   LCtrl + k    |                 |                       |       |         |           |
-|     CapsLock + n     |      Down      |    Next line    |   CapsLock & n::^n    |       |  Emacs  | LCtrl + n |
-|     CapsLock + m     |                |                 |                       |       |         |           |
-|     CapsLock + 0     |   LCtrl + 0    |                 |                       |       | VS Code |           |
-|     CapsLock + \     |       \        |     \ or \|     |    CapsLock & \::\    |       |         |           |
-| CapsLock + Backspace |   LCtrl + `    |                 |                       |       | VS Code |           |
-|     CapsLock + ]     |   LCtrl + ]    |                 |                       |       |         |           |
-|   CapsLock + Space   | LCtrl + Space  |                 |                       |       |         |           |
+## WANG Layout
 
 
-## Enter
+Default Layer
 
-|    Key    |    Map    |      Command      |            Script             |     When     | Source  | Shortcuts |
-| :-------: | :-------: | :---------------: | :---------------------------: | :----------: | :-----: | :-------: |
-|   Enter   |   Enter   |                   |  Enter::KeyWait,Enter,T0.156  | Single Click |         |           |
-|   Enter   |   RCtrl   |                   | Enter::SendInput {RCtrl down} |     Held     |         |           |
-| Enter + q |   RCtrl   |                   |                               |              |         |           |
-| Enter + w | RCtrl + w |   Delete a word   |                               |              |  Emacs  |           |
-| Enter + e | RCtrl + e |                   |                               |              |         |           |
-| Enter + r | RCtrl + r |                   |                               |              |         |           |
-| Enter + t | RCtrl + t |                   |                               |              |         |           |
-| Enter + a | RCtrl + a |                   |                               |              |         |           |
-| Enter + s | RCtrl + s |       Save        |                               |              |         |           |
-| Enter + d | RCtrl + d |                   |                               |              |         |           |
-| Enter + f |   Right   |    Right arrow    |        Enter & f::Left        |              |  Emacs  |           |
-| Enter + g | RCtrl + g |                   |                               |              |         |           |
-| Enter + z | RCtrl + z |                   |                               |              |         |           |
-| Enter + x |           |                   |                               |              |         |           |
-| Enter + c | RCtrl + c |                   |                               |              |         |           |
-| Enter + v | RCtrl + v | block visual mode |                               |              |   vim   |           |
-| Enter + b | RCtrl + b |    Left arrow     |        Enter & b::Left        |              |  Emacs  |           |
-| Enter + 1 | RCtrl + 1 |                   |                               |              | VS Code |           |
-| Enter + 2 | RCtrl + 2 |                   |                               |              | VS Code |           |
-| Enter + 3 | RCtrl + 3 |                   |                               |              | VS Code |           |
+|               |       |       |       |       |       |       |       |       |       |       |       |       |               |       |
+| :-----------: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :-----------: | :---: |
+|      Esc      |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |   0   |   -   |   =   |       \       |  \`   |
+|      Tab      |   Q   |   W   |   E   |   R   |   T   |   Y   |   U   |   I   |   O   |   P   |   [   |   ]   |   BackSpace   | █████ |
+| Ctrl or Enter |   A   |   S   |   D   |   F   |   G   |   H   |   J   |   K   |   L   |   ;   |   '   |   =   | Ctrl or Enter | █████ |
+| Shift or LFn  | █████ |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |   /   | █████ | Shift or RFn  |  Fn   |
+|     █████     |  Alt  |  Gui  | █████ | █████ | █████ | Space | █████ | █████ | █████ | █████ |  Gui  |  Alt  |     █████     | █████ |
 
 
-## Backspace
+Fn
 
-|    Key    |         Map          | Command | Script | When  | Source | Shortcuts |
-| :-------: | :------------------: | :-----: | :----: | :---: | :----: | :-------: |
-| Backspace | \` | | Backspace::\` |         |  HHKB  |       |
-
-
-## Slash
-
-|  Key  |   Map    | Command |    Script    | When  | Source | Shortcuts |
-| :---: | :------: | :-----: | :----------: | :---: | :----: | :-------: |
-|   \   | Backspce |         | \::Backspace |       |  HHKB  |           |
+|       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| Boot  |  F1   |  F2   |  F3   |  F4   |  F5   |  F6   |  F7   |  F8   |  F9   |  F10  |  F11  |  F12  |  Ins  |  Del  |
+|       |  RGB  | RGBfw | RGBrv |       |       |       |       |  Psc  |  Slk  |  Pus  |  Up   |       |       | █████ |
+| Caps  |  VoD  |  VoU  |  Mut  |  Ejc  |       | NP_*  | NP_/  | Home  | PgUp  | Left  | Right |       | NPEnt | █████ |
+|       | █████ |       |       |       |       |       | NP_+  | NP_-  |  End  | PgDwn | Down  | █████ |       |       |
+| █████ |       |       | █████ | █████ | █████ |       | █████ | █████ | █████ | █████ |       |       | █████ | █████ |
 
 
-## Back Quote
+LFn
 
-|        Key         |  Map  | Command | Script | When  | Source | Shortcuts |
-| :----------------: | :---: | :-----: | :----: | :---: | :----: | :-------: |
-| ` | Esc | |\`::Esc |       |  HHKB   |        |
+|       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|       |       |       |       |       |       |  F6   |  F7   |  F8   |  F9   |  F10  |  F11  |  F12  |  Ins  |  Del  |
+|       |       |       |       |       |       |       |       |       |  Psc  |  Slk  |  Pus  |       |       | █████ |
+| Ctrl  |       |       |       |       |       | Left  | Down  |  Up   | Right |       |       |       |       | █████ |
+| Shift | █████ |       |       |       |       |       |       |       |       | DskBw | DskFw | █████ |       |       |
+| █████ |  Alt  |       | █████ | █████ | █████ |       | █████ | █████ | █████ | █████ |       |       | █████ | █████ |
 
 
-## Alt
+RFn
 
-|   Key    |     Map      | Command |   Script    | When  | Source | Shortcuts |
-| :------: | :----------: | :-----: | :---------: | :---: | :----: | :-------: |
-| LAlt + b | Ctrl + Left  |         | >!b::^Left  |       | Emacs  |           |
-| LAlt + f | Ctrl + Right |         | >!f::^Right |       | Emacs  |           |
+|       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+|  Pwr  |  F1   |  F2   |  F3   |  F4   |  F5   |       |       |       |       |       |       |       |       |       |
+|       |       |       |       |       |       |       |       |       |       |       |       |       |       | █████ |
+|       |  VoD  |  VoU  |  Mut  |       |       |       |       |       |       |       |       |       |       | █████ |
+|       | █████ |       |       |       |       |       |       |       |       |       |       | █████ |       |       |
+| █████ |       | █████ | █████ | █████ | █████ | █████ | █████ | █████ |       |       |       |       | █████ | █████ |

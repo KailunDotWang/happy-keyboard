@@ -2,6 +2,10 @@
 
 WANG Layout.
 
+Power by AutoHotkey v1.1.33.10.
+
+Create on 2022/03/03 20:09:57 by [Kailun.Wang](https://kailun.wang).
+
 
 ## Caps Lock
 
